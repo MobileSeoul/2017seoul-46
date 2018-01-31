@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Account.Recommend.DetailBooksActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:background="@drawable/flower2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/ltitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="8dp"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_below="@+id/lname"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/lauthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_below="@+id/lgu"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/lpub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/laddress" />
+
+            <TextView
+                android:id="@+id/lyear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_below="@+id/ltel"
+                 />
+
+            <TextView
+                android:id="@+id/lmonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_below="@+id/lfax"
+                />
+
+            <TextView
+                android:id="@+id/lrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_below="@+id/lmonth"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

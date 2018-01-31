@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cafe24.kye1898.library">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAfjeLihQAYMfG38DvaTgFBc4CTWckw1_0" />
+
+        <activity android:name=".Splash" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MyBookshelf.MyBook.MyBookshelfActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MyBookshelf.MyBook.AddActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.MyBook.DeleteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.MyBook.InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.MyBook.PhotoCaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Account.AccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Search.LibNameSearch.DetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Search.NearLibSearch.MapsActivity2" android:screenOrientation="portrait" />
+        <activity android:name=".Search.BookSearchFromLib.SearchBookMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Search.BookSearchFromLib.DetailBookActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.SharedBook.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.SharedBook.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.MyBook.BookParsing.SearchName_bookParsing" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.SharedBook.SharedDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Search.LibNameSearch.SearchName2" android:screenOrientation="portrait"/>
+        <activity android:name=".Search.LibNameSearch.SearchName1" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.SharedBook.SharedBookComunity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookshelf.SharedBook.ShareEditActivity" android:screenOrientation="portrait">
+        </activity>
+        <receiver android:name=".BroadcastD" />
+    </application>
+
+</manifest>

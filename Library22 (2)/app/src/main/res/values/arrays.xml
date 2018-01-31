@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_read2">
+        <item>읽음 해제</item>
+        <item>삭제</item>
+    </string-array>
+    <string-array name="array_read">
+        <item>읽음</item>
+        <item>삭제</item>
+    </string-array>
+    <string-array name="array_photo">
+        <item>사진 촬영</item>
+        <item>사진 불러오기</item>
+    </string-array>
+    <string-array name="array_photo_ex">
+        <item>사진 새로 촬영</item>
+        <item>사진 새로 불러오기</item>
+        <item>사진 삭제</item>
+    </string-array>
+    <string-array name="QueryType">
+        <item>제목</item>
+        <item>지은이</item>
+        <item>출판사</item>
+    </string-array>
+    <string-array name="Sort">
+        <item>판매량순</item>
+        <item>출판일순</item>
+        <item>이름순</item>
+        <item>별점순</item>
+        <item>리뷰순</item>
+    </string-array>
+    <string-array name="F1">
+        <item>전체</item>
+        <item>제목</item>
+        <item>키워드</item>
+        <item>작가</item>
+        <item>출판사</item>
+        <item>초록 키워드</item>
+        <item>목차 키워드</item>
+    </string-array>
+</resources>

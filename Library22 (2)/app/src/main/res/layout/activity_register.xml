@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="회원가입"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="회원 가입을 하시면, 사람들과 독후감을 공유할 수 있습니다.\n가입을 하시려면,\n아이디 중복체크를 하시고 가입하시면 됩니다."
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                >
+                <EditText
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:hint="아이디"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/colorGray"
+                    android:background="#ffffff"
+                    android:id="@+id/idText"
+                    android:layout_marginRight="10dp"
+
+                    />
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="중복 체크"
+                    android:layout_gravity="center"
+                    android:id="@+id/validateButton"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorGray"
+                    />
+            </LinearLayout>
+
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/passwordText"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorGray"
+                android:background="#ffffff"
+                />
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="이메일"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorGray"
+                android:background="#ffffff"
+                android:id="@+id/emailText"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark"
+                android:text="가입하기"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/registerButton"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@drawable/selector_bottombar_item"
+        app:itemTextColor="@drawable/selector_bottombar_item"
+        app:menu="@menu/bottom_navigation_main" >
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
+
+

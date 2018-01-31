@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="읽은 쪽수"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:id="@+id/relativeLayout">
+
+
+        <NumberPicker
+            android:id="@+id/numberPicker1"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_alignBaseline="@+id/numberPicker2"
+            android:layout_alignBottom="@+id/numberPicker2"
+            android:layout_toLeftOf="@+id/numberPicker2" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker2"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"/>
+
+        <NumberPicker
+            android:id="@+id/numberPicker3"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_alignBaseline="@+id/numberPicker2"
+            android:layout_alignBottom="@+id/numberPicker2"
+            android:layout_toRightOf="@+id/numberPicker2" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout"
+        android:background="#00ffffff"
+        android:text="확인"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cancel"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_toStartOf="@+id/cancel"
+        android:background="#00ffffff"
+        android:text="취소"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

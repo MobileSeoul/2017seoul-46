@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cafe24.kye1898.library.Search.NearLibSearch.MapsActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/hello"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/search_lib"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="공공도서관 찾기"
+            android:textColor="@color/colorTitle"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="공공도서관에서 책 찾기"
+            android:textSize="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:id="@+id/search_book_from_lib"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/there"
+        android:id="@+id/hi"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorTitle"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/there"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/hello"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_search_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/park_name22"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/button_search"
+                android:hint="검색할 도서관의 이름을 입력하세요"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_search_white_24dp"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text111"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="지도 축척이 맞지 않을 경우 하단의 Search 버튼을 한번 더 눌러주세요"
+            android:textColor="@color/colorTitle"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:text="현재 위치에서 반경 1km이내에 있는 도서관들 입니다."
+            android:textColor="@color/colorPrimary"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/there"
+        >
+        <fragment
+            android:id="@+id/mapmap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_marginBottom="50dp"
+            tools:context="com.cafe24.kye1898.library.Search.NearLibSearch.MapsActivity2">
+        </fragment>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@drawable/selector_bottombar_item"
+        app:itemTextColor="@drawable/selector_bottombar_item"
+        app:menu="@menu/bottom_navigation_main" >
+
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

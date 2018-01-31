@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="16dp"
+        android:background="@color/colorPrimary"
+>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:alpha="0.8"
+                android:background="@drawable/book1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:padding="16dp"
+                    android:id="@+id/lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="bottom"
+                    android:gravity="left"
+                    android:text="도서관명"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="자치구명"
+
+                        />
+                    <TextView
+                        android:id="@+id/lgu"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingTop="6dip"
+                        android:layout_below="@+id/lname"
+                        android:text="자치구" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="  도서관 종류"
+                        />
+                    <TextView
+                        android:id="@+id/ltype"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="도서관 종류"
+                        android:layout_below="@+id/lhomepage"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="주소"
+                        />
+                    <TextView
+                        android:id="@+id/laddress"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:layout_below="@+id/lgu"
+                        android:text="주소" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="전화번호"
+                        />
+                    <TextView
+                        android:id="@+id/ltel"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:text="전화번호"
+                        android:layout_below="@+id/laddress"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="  팩스 번호"
+                        />
+                    <TextView
+                        android:id="@+id/lfax"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="팩스번호"
+                        android:layout_below="@+id/ltel"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="홈페이지\ "
+                        />
+                    <TextView
+                        android:id="@+id/lhomepage"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textColorLink="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:linksClickable="true"
+                        android:autoLink="web"
+                        android:text="홈페이지 주소"
+                        android:layout_below="@+id/lfax"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="개관 년월일"
+                        />
+                    <TextView
+                        android:id="@+id/lfound"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="개관 년월일"
+                        android:layout_below="@+id/lclose"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="휴관일"
+                        />
+                    <TextView
+                        android:id="@+id/lclose"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="휴관일"
+                        android:layout_below="@+id/ltype"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="대출 책수 및 \n기간"
+                        />
+                    <TextView
+                        android:id="@+id/lborrow"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="대출 방법"
+                        android:layout_below="@+id/lfound"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="회원가입 \n방법"
+                        />
+                    <TextView
+                        android:id="@+id/lmember"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="회원가입"
+                        android:layout_below="@+id/lborrow"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="가는 방법"
+                        />
+                    <TextView
+                        android:id="@+id/lhowto"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="가는 벙법"
+                        android:layout_below="@+id/lmember"
+                        />
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="3dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="3dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:text="층별 안내"
+                        />
+                    <TextView
+                        android:id="@+id/lfloor"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingBottom="2dip"
+                        android:paddingTop="6dip"
+                        android:text="층별 안내"
+                        android:layout_below="@+id/lhowto"
+                        android:layout_marginBottom="10dp"
+                        />
+                    </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="20dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    ></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                <fragment
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    tools:context="com.example.nahej.weather.SecondActivity"
+                    android:clickable="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/transparent_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:alpha="0.5"
+                    />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@android:color/white"
+        app:itemIconTint="@drawable/selector_bottombar_item"
+        app:itemTextColor="@drawable/selector_bottombar_item"
+        app:menu="@menu/bottom_navigation_main" >
+
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>

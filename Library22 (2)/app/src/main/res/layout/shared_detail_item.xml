@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+
+    <ScrollView
+        android:layout_above="@id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:background="@color/colorPrimary"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:alpha="0.8"
+                android:background="@drawable/book1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/shared_sTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="left"
+                    android:text="sTitle"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:paddingBottom="20dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shared_sTitle"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="3"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="6dip"
+                    android:text="작성자"
+                    android:textColor="#5d5d5d"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/shared_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_edittext2"
+                    android:padding="10dp"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="6dip"
+                    android:text="userid"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:text="작가"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/shared_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext2"
+                android:padding="10dp"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:text="author"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:text="출판사"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"
+                />
+
+            <TextView
+                android:id="@+id/shared_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edittext2"
+                android:padding="10dp"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:text="publisher"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="독후감 내용"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#5d5d5d"
+                android:textStyle="bold"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:layout_marginTop="13dp"
+                />
+
+            <TextView
+                android:id="@+id/sContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="13dp"
+
+                android:background="@drawable/custom_edittext2"
+                android:padding="10dp"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:text="sContent"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    app:itemBackground="@android:color/white"
+    app:itemIconTint="@drawable/selector_bottombar_item"
+    app:itemTextColor="@drawable/selector_bottombar_item"
+    app:menu="@menu/bottom_navigation_main" >
+
+</android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
